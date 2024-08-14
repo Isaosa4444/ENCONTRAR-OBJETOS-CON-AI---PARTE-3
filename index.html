@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 135</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <script src="//unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="fondi.avif">
+    <center>
+        <h3 class="btn btn-warning heading">Buscador de objetos IA <br>
+            <span style="font-size: 13px;">El nombre que escribas de entrada, debera corresponder con los nombres presentes en el modelo coco,
+                solo asi podra detectar los objetos</span>
+        </h3>
+        <br> <br>
+        <div class="form-group" style="width: 50%;">
+            <label>Nombre del objeto: </label>
+            <input type="text" id="object_name">
+        </div>
+        <button class="btn btn-warning" onclick="start()" id="start">Iniciar</button>
+        <br><br>
+        <h3 id="object_status" class="btn btn-warning"></h3>
+        <br><br>
+        <h3 id="status" class="btn btn-danger"></h3>
+    </center>
+    <div class="copy_right_footer">Desarrollado por Isa</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
